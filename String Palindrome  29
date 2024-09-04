@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+
+    Scanner scanner = new Scanner(System.in);
+
+    String input = scanner.nextLine();
+
+    boolean isPalindrome = isPalindrome(input);
+    if (isPalindrome) {
+        System.out.println("Palindrome");
+    } else {
+        System.out.println("Not a Palindrome");
+    }
+
+    scanner.close();
+}
+
+public static boolean isPalindrome(String str) {
+
+    String cleanedStr = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+    String reversedStr = new StringBuilder(cleanedStr).reverse().toString();
+    return cleanedStr.equals(reversedStr);
+}
+}
+    
