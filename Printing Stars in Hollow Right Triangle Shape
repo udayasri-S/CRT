@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+       void printHollowRightTriangle(int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < i; j++) {
+            printf("  ");
+        }
+        for (int j = i; j < n; j++) {
+            if (i == 0 || j == i || j == n-1) {
+                printf("* ");
+            } else {
+                printf("  ");
+            }
+        }
+        
+        printf("\n");
+    }
+}
+int main() {  
+    int n;
+    scanf("%d", &n);
+    printHollowRightTriangle(n);
+    return 0;
+}
