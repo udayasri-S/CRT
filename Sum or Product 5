@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    long long num1, num2;
+    scanf("%lld %lld", &num1, &num2);
+    long long p = num1 * num2; 
+    if (p > 1000)
+    { 
+        printf("%lld\n", num1 + num2);
+    }
+    
+    else
+    {
+        printf("%lld\n", p);
+    }
+    return 0;
+}
+
