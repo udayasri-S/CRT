@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+
+char n;
+scanf("%c",&n);
+if(n>=65 && n<=90)
+{
+    printf("Upper\n");
+}
+if(n>=97 && n<=122) 
+{
+    printf("Lower\n");
+}
+if(n>=48 && n<=57) 
+{
+    printf("Number\n");
+}
+if(!((n>=65 && n<=90) || (n>=97 && n<=122)||(n>=48 && n<=57))) 
+{
+    printf("Symbol");
+}
+
+
+
+    return 0;
+}
