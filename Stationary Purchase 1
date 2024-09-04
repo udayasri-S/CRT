@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {   
+int q,p,a,d,ad,gst,net,gstt,nett;
+    scanf("%d%d",&q,&p);
+    printf("Quantity Ordered %d\n",q);
+    printf("Price per item is Rs.%d\n",p);
+    a=q*p; 
+    printf("Total Amount = Rs.%d\n",a);
+
+if(q>200)
+{
+    d=a*20/100;
+ad=a-d;
+gst=ad*18/100;
+    net=ad+gst;
+    printf("Discount Earned = Rs.%d.0\n",d);
+    printf("Amount after Discount - Rs.%d.0\n",ad);
+    printf("GST - Rs.%d.0\n",gst);
+    printf("Net Amount Payable is Rs.%d.0",net);
+     }
+else
+{
+   gstt=a*18/100;
+    nett=a+gstt;
+    printf("GST - Rs.%d.0\n",gstt);
+    printf("Net Amount Payable is Rs.%d.0",nett);
+}
+}
